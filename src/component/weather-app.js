@@ -47,7 +47,7 @@ class WeatherApp extends HTMLElement {
               const weather = document.querySelector('.weather');
 
               city.innerText = e.description;
-              temp.innerText = e.params[5].times[0].celcius.replace(/\s/g, 'mm');
+              temp.innerText = e.params[5].times[0].celcius.replace(/\s/g, '°');
               weather.innerText = e.params[6].times[0].name;
             }
           });
